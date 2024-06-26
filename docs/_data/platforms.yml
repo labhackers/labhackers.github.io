@@ -1,0 +1,5 @@
+# platform options
+
+- name: GitHub
+  icon: "fa-brands fa-github"
+  link: https://github.com/labhackers

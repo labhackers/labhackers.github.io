@@ -9,10 +9,5 @@ hide_project_page: true
 hide_credits: true
 google_analytics:
 
-platforms:
-    - name: GitHub
-      icon: <i class="fa-brands fa-github"></i>
-      link: https://github.com/labhackers
-
 plugins:
     - jekyll-remote-theme
