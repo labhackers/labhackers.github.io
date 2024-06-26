@@ -3,6 +3,6 @@ description: Resources for homelab hackers everywhere
 show_downloads: false
 show_credits: false
 google_analytics:
-remote_theme: cotes2020/jekyll-theme-chirpy
+remote_theme: vaibhavvikas/jekyll-theme-minimalistic
 plugins:
     - jekyll-remote-theme
