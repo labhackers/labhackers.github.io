@@ -1,11 +1,13 @@
 {% if site.logo %}
-<img class="logo" src="{{ site.logo | relative_url }}" alt="Logo">
+<div style="text-align: center;">
+	<img class="logo" src="{{ site.logo | relative_url }}" alt="Logo">
+</div>
 {% endif %}
 
 {% if site.blank_title %}
-<h2>{{ site.title | default: site.github.repository_name }}</h2>
+<h2 align="center">{{ site.title | default: site.github.repository_name }}</h2>
 {% else %}
-<h2>{{ site.title | default: site.github.repository_name }}</h2>
+<h2 align="center">{{ site.title | default: site.github.repository_name }}</h2>
 {% endif %}
 
 {% if site.email %}
