@@ -11,7 +11,9 @@
     {% include header-title.html %}
 {% endif %}
 
-<p>{{ site.description | default: site.github.project_tagline }}</p>
+{% unless site.hide_description %}
+	<p>{{ site.description | default: site.github.project_tagline }}</p>
+{% endunless %}
 
 {% unless site.hide_project_page %}
     {% if site.github.is_project_page %}
