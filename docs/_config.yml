@@ -4,7 +4,8 @@ remote_theme: vaibhavvikas/jekyll-theme-minimalistic
 color-scheme: dark
 logo: assets/img/LabHackers-256.png
 favicon: true
-show-credits: false
+show_credits: false
+hide_project_page: true
 google_analytics:
 
 platforms:
