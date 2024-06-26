@@ -4,12 +4,13 @@ remote_theme: vaibhavvikas/jekyll-theme-minimalistic
 color-scheme: dark
 logo: assets/img/LabHackers-256.png
 favicon: true
-show_downloads: false
-show_credits: false
+show-credits: false
 google_analytics:
+
 platforms:
     - name: GitHub
       icon: <i class="fa-brands fa-github"></i>
       link: https://github.com/labhackers
+
 plugins:
     - jekyll-remote-theme
