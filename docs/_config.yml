@@ -1,0 +1,8 @@
+title: The Labhacker's Workshop
+description: Resources for homelab hackers everywhere
+show_downloads: false
+show_credits: false
+google_analytics:
+remote_theme: cotes2020/jekyll-theme-chirpy
+plugins:
+    - jekyll-remote-theme
