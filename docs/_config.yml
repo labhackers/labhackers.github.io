@@ -3,6 +3,7 @@ description: Resources for homelab hackers everywhere
 remote_theme: vaibhavvikas/jekyll-theme-minimalistic
 color-scheme: dark
 logo: assets/img/LabHackers-256.png
+favicon: true
 show_downloads: false
 show_credits: false
 google_analytics:
