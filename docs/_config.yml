@@ -1,6 +1,6 @@
 title: The Labhacker's Workshop
 description: Resources for homelab hackers everywhere
-remote_theme: vaibhavvikas/jekyll-theme-minimalistic
+remote_theme: athackst/jekyll-theme-profile
 color-scheme: dark
 logo: assets/img/LabHackers-256.png
 favicon: true
