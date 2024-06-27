@@ -1,7 +1,17 @@
+####################################################################
+# JEKYLL SITE SETTINGS
+####################################################################
 title: The Labhacker's Workshop
 description: Resources for homelab hackers everywhere
 remote_theme: athackst/jekyll-theme-profile
-google_analytics:
+profile_link: true
 
+####################################################################
+# PLUGIN SETTINGS
+####################################################################
 plugins:
     - jekyll-remote-theme
+    - jekyll-github-metadata
+    - jekyll-relative-links
+    - jekyll-paginate
+    - jekyll-tagging
