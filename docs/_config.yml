@@ -38,7 +38,7 @@ light_theme: light                                          # theme to use for d
 #   accent: "#ffffff"
 repo_info: false                                            # Show information for the source of this project
 user_metadata: true                                         # Show metadata associated with the owner
-profile_link: true                                          # Show link to owner's GitHub profile
+profile_link: false                                         # Show link to owner's GitHub profile
 
 ####################################################################
 # SOCIAL MEDIA SETTINGS
