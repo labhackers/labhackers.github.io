@@ -5,6 +5,7 @@ title: The Labhacker's Workshop
 description: Resources for homelab hackers everywhere
 remote_theme: athackst/jekyll-theme-profile
 copyright: "Copyright &copy; 2024 Redeyed Technologies [<a href=\"https://www.labhacker.dev/about.html\">attributions</a>]"
+url: "https://www.labhacker.dev"
 
 ####################################################################
 # THEME DEFAULTS
