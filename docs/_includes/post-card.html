@@ -1,0 +1,26 @@
+{%- assign image = post.image | default: site.image %}
+{%- assign excerpt = post.description | default: post.excerpt %}
+{%- assign border = include.border %}
+<div class="col-sm-6 col-lg-4 ">
+  <div class="py-4 d-flex flex-column {{ border }}">
+    <div class="image-container">
+      <a href="{{ post.url | relative_url }}">
+        <img class="rounded-2" src="{{ image | relative_url }}" width="377" height="200" alt="{{ post.title }}">
+      </a>
+    </div>
+    <h3 class="h6-mktg mb-12px">
+      <a class="Link--primary" href="{{ post.url | relative_url }}">{{ post.title }}</a>
+    </h3>
+    <div class="f4-mktg color-fg-muted mb-0">{{ excerpt }}</div>
+    <div class="mt-14px">
+      <div class="d-flex flex-items-center">
+        <div class="d-flex flex-items-end flex-wrap">
+          {%- if post.author %}
+          <span class="mr-3 mr-12px mt-1 f5-mktg text-bold">{{ post.author }}</span>
+          {%- endif %}
+          <span class="d-inline-block f5-mktg text-mono color-fg-muted mt-1">{{ post.date | date: "%b %d, %Y"}}</span>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>

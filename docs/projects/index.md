@@ -1,5 +1,6 @@
 ---
-layout: landing
+title: Labhacker Projects
+layout: page
 ---
 
 <h1 align="center">

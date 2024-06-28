@@ -1,0 +1,66 @@
+<script>
+    $(document).ready(function () {
+        $('#expansion-btn').click(function () {
+            $('.Extend').toggleClass('d-none');
+        });
+        $('#collapse-btn').click(function () {
+            $('.Extend').addClass('d-none');
+        })
+        $('#toolbar-btn').click(function () {
+            $('.Sidebar').toggleClass('d-lg-block');
+            $('.Toolbar-expand').toggleClass('d-lg-block');
+            $('.Toolbar-collapse').toggleClass('d-lg-block');
+            $('.Toolbar').toggleClass('flex-lg-column');
+        })
+        $('#sidebar-btn').click(function () {
+            $('.Sidebar').toggleClass('d-lg-block');
+            $('.Toolbar-expand').toggleClass('d-lg-block');
+            $('.Toolbar-collapse').toggleClass('d-lg-block');
+            $('.Toolbar').toggleClass('flex-lg-column');
+
+        })
+    });
+</script>
+<div class="Header d-flex border-right flex-items-start p-0 flex-justify-end position-sticky top-0">
+    <div class="flex-column flex-1 position-sticky top-0" >
+        <div class="Toolbar topbar d-flex flex-row py-3 flex-lg-justify-end flex-justify-start">
+            <div class="Toolbar-expand d-flex flex-justify-center d-none">
+                <button id="sidebar-btn" class="btn-octicon mr-2">{% octicon chevron-right height:16 %}</button>
+            </div>
+            <div class="d-flex flex-justify-center">
+                <button id="expansion-btn" class="btn-octicon mr-2 d-lg-none">{% octicon three-bars height:16 %}</button>
+            </div>
+            <div class="d-flex flex-justify-center">
+                {% include toggle.html %}
+            </div>
+            <div class="Toolbar-collapse d-flex flex-justify-center d-none d-lg-block">
+                <button id="toolbar-btn" class="btn-octicon mr-2">{% octicon chevron-left height:16 %}</button>
+            </div>
+        </div>
+        <div class="Sidebar d-none d-lg-block Layout Layout-sidebar Layout--sidebar-wide">
+            <div class="text-center">
+                <div class="px-5 py-2">
+                    {%- include masthead.html class="CircleBadge--large" %}
+                </div>
+                {%- if site.repo_info %}
+                <div class="py-2">
+                    {% include mini-repo-info-card.html class="Header-link no-underline" %}
+                </div>
+                {%- endif %}
+                {%- if site.nav %}
+                <div class="d-flex flex-column">
+                    {%- include nav.html %}
+                </div>
+                {%- endif %}
+                {%- if site.social_media %}
+                <div class="py-2 px-2">
+                    {%- include social.html %}
+                </div>
+                {%- endif %}
+            </div>
+        </div>
+        <div class="Extend d-none">
+            {%- include nav-overlay.html %}
+        </div>
+    </div>
+</div>
