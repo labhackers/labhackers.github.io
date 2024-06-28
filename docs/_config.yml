@@ -107,7 +107,7 @@ plugins:
 ####################################################################
 nav:
     - name: Home
-      url: /
+      url: https://labhackers.github.io/
     - name: About
       url: /about.html
     - name: Blog
