@@ -17,6 +17,7 @@ defaults:
       values:
         layout: "post"
         image: /assets/img/default.png
+        permalink: /blog/:categories/:title:output_ext
         toc: true
 
 ####################################################################
