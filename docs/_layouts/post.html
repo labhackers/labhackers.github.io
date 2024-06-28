@@ -24,6 +24,9 @@ layout: default
                             <img src="{{ image | relative_url }}" class="cover-image rounded-2"
                                 alt="{{ page.title }}" />
                         </div>
+						{% if page.photo_credit %}
+						<div class="text-italic">Photo Credit: {{ page.photo_credit }}</div>
+						{% endif %}
                         {%- endif %}
                     </div>
                 </div>
