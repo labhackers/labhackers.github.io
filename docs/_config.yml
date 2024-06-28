@@ -11,12 +11,12 @@ copyright: "Copyright &copy; 2024 Redeyed Technologies [<a href=\"https://www.la
 ####################################################################
 defaults:
     - scope:
-          path: ""
-          type: "posts"
+        path: ""
+        type: "posts"
       values:
-          layout: "post"
-          image: /assets/img/default.png
-          toc: true
+        layout: "post"
+        image: /assets/img/default.png
+        toc: true
 
 ####################################################################
 # THEME SETTINGS
