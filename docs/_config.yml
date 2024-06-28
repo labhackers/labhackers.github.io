@@ -22,8 +22,8 @@ defaults:
 # THEME SETTINGS
 ####################################################################
 style: appbar                                               # site style - one of 'appbar', 'topbar', 'sidebar', 'stacked'
-user_image: /assets/img/Labhackers-Social-800x400-TY.png    # user / project avatar.  If not set, the avatar of the project owner is used
-dark_theme: dark_dimmed                                     # theme to use for dark
+# user_image:                                                 # user / project avatar.  If not set, the avatar of the project owner is used
+dark_theme: dark                                            # theme to use for dark
 light_theme: light                                          # theme to use for dark
 # background:                                               # custom background image & overlay
 #   image: /path/to.img
