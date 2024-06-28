@@ -47,12 +47,12 @@ profile_link: false                                         # Show link to owner
 social_media:                                               # Social media accounts
   # behance: your_username
   # dribbble: your_username
-  docker: ragdata
+  # docker: your_username
   # facebook: your_username
   github: labhackers
   # hackerrank: your_username
   # instagram: your_username
-  keybase: ragdata
+  # keybase: your_username
   # linkedin: your_username
   # mail: email@address
   # mastodon: your_username
