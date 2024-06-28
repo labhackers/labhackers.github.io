@@ -43,16 +43,16 @@ profile_link: false                                         # Show link to owner
 ####################################################################
 # SOCIAL MEDIA SETTINGS
 ####################################################################
-icon_color: "#959da5"                                       # Colour of social media icons
+# icon_color: "#959da5"                                       # Colour of social media icons
 social_media:                                               # Social media accounts
   # behance: your_username
   # dribbble: your_username
-  # docker: your_username
+  docker: ragdata
   # facebook: your_username
   github: labhackers
   # hackerrank: your_username
   # instagram: your_username
-  # keybase: your_username
+  keybase: ragdata
   # linkedin: your_username
   # mail: email@address
   # mastodon: your_username
