@@ -1,5 +1,6 @@
 ---
 layout: landing
+hide_nav: true
 ---
 
 <h1 align="center">

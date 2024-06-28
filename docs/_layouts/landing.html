@@ -21,12 +21,16 @@ style: none
                 {% include mini-repo-info-card.html class="Header-link no-underline" %}
             </div>
             {%- endif %}
+
             {{ content }}
-            {%- if site.nav %}
-            <div class="d-flex flex-column">
-                {%- include nav.html %}
-            </div>
-            {%- endif %}
+
+            {% unless page.hide_nav %}
+				{%- if site.nav %}
+				<div class="d-flex flex-column">
+					{%- include nav.html %}
+				</div>
+				{%- endif %}
+			{% endunless %}
             {%- if site.social_media %}
             <div class="py-2 px-2">
                 {%- include social.html %}
