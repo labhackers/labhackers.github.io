@@ -47,28 +47,28 @@ profile_link: false                                         # Show link to owner
 ####################################################################
 # icon_color: "#959da5"                                       # Colour of social media icons
 social_media:                                               # Social media accounts
-  # behance: your_username
-  # dribbble: your_username
-  # docker: your_username
-  # facebook: your_username
-  github: labhackers
-  # hackerrank: your_username
-  # instagram: your_username
-  # keybase: your_username
-  # linkedin: your_username
-  # mail: email@address
-  # mastodon: your_username
-  # medium: your_username
-  # stackoverflow: your_user_id
-  # telegram: your_username
-  # threads: your_username
-  # tiktok: your_username
-  # twitter: your_username
-  # unsplash: your_username
-  # vk: your_username
-  # vscode: althack
-  # youtube: your_username
-  # x: althack
+    # behance: your_username
+    dev_to: ragdata
+    # dribbble: your_username
+    # docker: your_username
+    # facebook: your_username
+    github: labhackers
+    # hackerrank: your_username
+    # instagram: your_username
+    # keybase: your_username
+    # linkedin: your_username
+    # mail: email@address
+    # mastodon: your_username
+    # medium: your_username
+    # stackoverflow: your_user_id
+    # telegram: your_username
+    # threads: your_username
+    # tiktok: your_username
+    # unsplash: your_username
+    # vk: your_username
+    # vscode: althack
+    # youtube: your_username
+    # x: althack
 
 ####################################################################
 # POST TIMELINE
