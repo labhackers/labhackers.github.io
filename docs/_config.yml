@@ -83,8 +83,8 @@ nav:
       url: /about.html
     - name: Blog
       url: /blog
-    - name: Projects
-      url: /projects
+#    - name: Projects
+#      url: /projects
 
 ####################################################################
 # REPOSITORY LINKS

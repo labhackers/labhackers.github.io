@@ -11,7 +11,12 @@
             <div class="Header-item">
                 <button id="expansion-btn" class="btn-octicon mr-2 d-sm-none">{% octicon three-bars height:16 %}</button>
                 <a href="{{ site.baseurl }}/" class="Header-link f4 d-flex flex-items-center">
-                    {% octicon mark-github height:32 %}
+					{% unless site.profile_link %}
+						<img class="avatar img-cover circle" height="32" width="32" alt="{{ name }}"
+						src="{{ user_img | relative_url }}">
+					{% else %}
+						{% octicon mark-github height:32 %}
+					{% endunless %}
                 </a>
             </div>
             <a href="{{ site.baseurl }}/" class="Header-item Header-link Header-item--full">{{ name }}</a>
