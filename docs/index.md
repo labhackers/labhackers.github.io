@@ -11,3 +11,4 @@ hide_social: true
 
 <h1 class="text-center">Welcome to the<br />Labhacker's Workshop</h1>
 
+<h3 class="text-center text-italic">Resources for Homelab Hacker's Everywhere</h3>
