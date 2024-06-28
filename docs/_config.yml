@@ -21,30 +21,30 @@ defaults:
 ####################################################################
 # THEME SETTINGS
 ####################################################################
-style: appbar           # site style - one of 'appbar', 'topbar', 'sidebar', 'stacked'
-# user_image:           # user / project avatar.  If not set, the avatar of the project owner is used
-dark_theme: dark_dimmed # theme to use for dark
-light_theme: light      # theme to use for dark
-# background:           # custom background image & overlay
+style: appbar                                               # site style - one of 'appbar', 'topbar', 'sidebar', 'stacked'
+user_image: /assets/img/Labhackers-Social-800x400-TY.png    # user / project avatar.  If not set, the avatar of the project owner is used
+dark_theme: dark_dimmed                                     # theme to use for dark
+light_theme: light                                          # theme to use for dark
+# background:                                               # custom background image & overlay
 #   image: /path/to.img
 #   overlay: rgba(0, 0, 0, 0.7)
 #   light:
 #       overlay: rgba(255, 255, 255, 0.5)
 #   dark:
 #       overlay: rgba(0, 0, 0, 0.5)
-# header:               # custom header colours
+# header:                                                   # custom header colours
 #   color: "#4051b5"
 #   text: "rgba(255, 255, 255, 0.7)"
 #   accent: "#ffffff"
-repo_info: false        # Show information for the source of this project
-user_metadata: true     # Show metadata associated with the owner
-profile_link: true      # Show link to owner's GitHub profile
+repo_info: false                                            # Show information for the source of this project
+user_metadata: true                                         # Show metadata associated with the owner
+profile_link: true                                          # Show link to owner's GitHub profile
 
 ####################################################################
 # SOCIAL MEDIA SETTINGS
 ####################################################################
-icon_color: "#959da5"   # Colour of social media icons
-social_media:           # Social media accounts
+icon_color: "#959da5"                                       # Colour of social media icons
+social_media:                                               # Social media accounts
   # behance: your_username
   # dribbble: your_username
   # docker: your_username
@@ -71,12 +71,47 @@ social_media:           # Social media accounts
 ####################################################################
 # POST TIMELINE
 ####################################################################
-posts_limit: 4          # number of posts to show on home page
+posts_limit: 4                                              # number of posts to show on home page
+
+####################################################################
+# NAVIGATION LINKS
+####################################################################
+nav:
+    - name: Home
+      url: https://www.labhacker.dev/
+    - name: About
+      url: /about.html
+    - name: Blog
+      url: /blog
+    - name: Projects
+      url: /projects
+
+####################################################################
+# REPOSITORY LINKS
+####################################################################
+repositories:                                               # repositories to show on home page
+    sort_by: pushed                                         # options: 'pushed', 'stars'
+    limit: 6                                                # maximum number of repositories to show
+    exclude:                                                # repositories to exclude
+        archived: true
+        forks: true
+#         repositories:                                       # list of repositories to exclude
+#             - item
+
+####################################################################
+# PLUGIN SETTINGS
+####################################################################
+plugins:
+    - jekyll-remote-theme
+    - jekyll-github-metadata
+    - jekyll-relative-links
+    - jekyll-paginate
+    - jekyll-tagging
 
 ####################################################################
 # JEKYLL-PAGINATE SETTINGS
 ####################################################################
-paginate: 6             # number of posts to show per page of blog posts
+paginate: 6                                                 # number of posts to show per page of blog posts
 paginate_path: "/blog/page:num"
 
 ####################################################################
@@ -93,44 +128,9 @@ category_path: category
 category_layout: category_layout.html
 
 ####################################################################
-# PLUGIN SETTINGS
-####################################################################
-plugins:
-    - jekyll-remote-theme
-    - jekyll-github-metadata
-    - jekyll-relative-links
-    - jekyll-paginate
-    - jekyll-tagging
-
-####################################################################
-# NAVIGATION LINKS (moving to _data)
-####################################################################
-nav:
-    - name: Home
-      url: https://labhackers.github.io/
-    - name: About
-      url: /about.html
-    - name: Blog
-      url: /blog
-    - name: Projects
-      url: /projects
-
-####################################################################
 # CARD LINKS (moving to _data)
 ####################################################################
 # links:
 #     - name: Example
 #       url: /path
 #       thumbnail: /path/to.img
-
-####################################################################
-# REPOSITORY LINKS (moving to _data)
-####################################################################
-repositories:           # repositories to show on home page
-    sort_by: pushed     # options: 'pushed', 'stars'
-    limit: 6            # maximum number of repositories to show
-    exclude:            # repositories to exclude
-        archived: true
-        forks: true
-#         repositories:   # list of repositories to exclude
-#             - item
