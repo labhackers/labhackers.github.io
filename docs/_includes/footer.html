@@ -4,10 +4,12 @@
             {%- if site.social_media %}
                 {%- include social.html %}
             {%- endif %}
-            <div class="flex-1"></div>
-            <div class="flex-0 mx-auto px-4">
-                <div>Made with <a href="https://www.althack.dev/jekyll-theme-profile/">jekyll theme profile</a></div>
-            </div>
+			{% if site.copyright %}
+				<div class="flex-1"></div>
+				<div class="flex-0 mx-auto px-4">
+					<div>{{ site.copyright }}</div>
+				</div>
+			{% endif %}
         </div>
    </div>
 </footer>
