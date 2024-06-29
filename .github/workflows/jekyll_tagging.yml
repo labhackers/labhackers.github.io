@@ -31,7 +31,7 @@ jobs:
               id: pages
               uses: actions/configure-pages@v5
             - name: Run Tag Generator Script
-              run: ruby -r ../scripts/tag_generator.rb
+              run: ruby -r scripts/tag_generator.rb
             - name: Build Jekyll            # Outputs to the './_site' directory by default
               run: bundle exec jekyll build --baseurl "${{ steps.pages.outputs.base_path }}"
               env:
