@@ -15,7 +15,7 @@ layout: page
 	{% for post in site.posts %}
 		{% if post.tags contains tag[0] %}
 			{% include post-card.html %}
-			{% tag_posts | plus: 1 %}
+			{% increment tag_posts %}
 			{% if tag_posts == max_posts %}
 				{% if tag[1].size > max_posts %}
 					{% capture tag_url %}{{ site.url }}{{ site.baseurl }}{{ site.tag_page_dir | default: tags }}/{{ tag | first | slugify }}{% endcapture%}
