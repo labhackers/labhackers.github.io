@@ -5,11 +5,13 @@ layout: page
 <h1 class="h3-mktg mt-4 mb-6 mb-md-8">{{ page.tag | capitalize }}</h1>
 
 <div class="d-flex flex-wrap gutter-spacious">
-{% for post in page.posts %}
-    {%- if post.feature or forloop.first %}
-        {%- include post-feature-card.html %}
-    {%- else %}
-        {%- include post-card.html border="border-top" %}
-    {%- endif %}
+{% for post in site.posts %}
+	{% if post.tags contains page.tag %}
+		{%- if post.feature or forloop.first %}
+			{%- include post-feature-card.html %}
+		{%- else %}
+			{%- include post-card.html border="border-top" %}
+		{%- endif %}
+	{% endif %}
 {% endfor %}
 </div>
