@@ -1,4 +1,4 @@
 ---
 layout: tags
-tag: homelab
+tag-name: homelab
 ---
