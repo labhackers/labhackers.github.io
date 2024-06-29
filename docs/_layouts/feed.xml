@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="utf-8"?>
+<feed xmlns="http://www.w3.org/2005/Atom">
+
+{% assign user = site.github.owner %}
+{%- assign name = site.title | default: user.name | default: user.login %}
+
+<title>{{ name }}</title>
+<link href="{{ '/atom.xml' | relative_url }}" rel="self"/>
+<link href="{{ site.url }}{{ site.baseurl }}"/>
+<updated>{{ site.time | date_to_xmlschema }}</updated>
+<id>{{ site.url }}{{ site.baseurl }}</id>
+<author>
+<name>@{{ user.login }}</name>
+<email>{{ user.email }}</email>
+</author>
+
+{% for post in site.posts %}
+    {% if post.tags contains page.tag-name %}
+    <entry>
+        <title>{{ post.title | xml_escape }}</title>
+        <link href="{{ site.url }}{{ site.baseurl }}{{ post.url }}"/>
+        <updated>{{ post.date | date_to_xmlschema }}</updated>
+        <id>{{ site.url }}{{ post.id }}</id>
+        <content type="html">{{ post.content | xml_escape }}</content>
+    </entry>
+    {% endif %}
+{% endfor %}
+
+</feed>
