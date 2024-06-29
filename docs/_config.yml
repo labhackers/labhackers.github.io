@@ -49,6 +49,7 @@ profile_link: false                                         # Show link to owner
 social_media:                                               # Social media accounts
     # behance: your_username
     dev_to: ragdata
+    discord: s6gZZUc67y
     # dribbble: your_username
     # docker: your_username
     # facebook: your_username
@@ -57,10 +58,12 @@ social_media:                                               # Social media accou
     # instagram: your_username
     # keybase: your_username
     # linkedin: your_username
-    # mail: email@address
+    mail: info@labhacker.dev
     # mastodon: your_username
     # medium: your_username
+    reddit: r/RedeyedSoftware                               # can be either "r/subreddit_name" or "user/username"
     # stackoverflow: your_user_id
+    substack: redeyedau
     # telegram: your_username
     # threads: your_username
     # tiktok: your_username
