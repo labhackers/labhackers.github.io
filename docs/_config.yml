@@ -45,11 +45,11 @@ profile_link: false                                         # Show link to owner
 ####################################################################
 # SOCIAL MEDIA SETTINGS
 ####################################################################
-# icon_color: "#959da5"                                       # Colour of social media icons
+icon_color: "#959da5"                                       # Colour of social media icons
 social_media:                                               # Social media accounts
     # behance: your_username
     dev_to: ragdata
-    discord: s6gZZUc67y
+    discord: 8e7ncjAR
     # dribbble: your_username
     # docker: your_username
     # facebook: your_username
