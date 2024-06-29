@@ -9,6 +9,21 @@ baseurl: "/"
 url: "https://www.labhacker.dev"
 
 ####################################################################
+# TAG / FEED HACK OPTIONS
+####################################################################
+tag_page_dir: tags
+tag_feed_dir: feeds
+feed_rights: Copyright (c) 2024 Redeyed Technologies
+exclude: [vendor]                                           # hack to stop 'Invalid Date' build error: @see https://github.com/jekyll/jekyll/issues/5267
+
+####################################################################
+# COLLECTION SETTINGS
+####################################################################
+collections:
+    authors:
+        output: false
+
+####################################################################
 # THEME DEFAULTS
 ####################################################################
 defaults:
@@ -17,9 +32,25 @@ defaults:
         type: "posts"
       values:
         layout: "post"
-        image: /assets/img/default.png
+        image: /assets/img/posts/default.png
         permalink: /blog/:categories/:title:output_ext
         toc: true
+    - scope:
+          path: ""
+          type: "feeds"
+      values:
+          layout: "feed"
+          permalink: /feeds/:title:output_ext
+          sitemap: false
+    - scope:
+          path: ""
+          type: "tags"
+      values:
+          sitemap: false
+    - scope:
+          path: "/assets/**/*.pdf"
+      values:
+          sitemap: false
 
 ####################################################################
 # THEME SETTINGS
@@ -53,7 +84,7 @@ social_media:                                               # Social media accou
     discord: 8e7ncjAR
     # dribbble: your_username
     # docker: your_username
-    # facebook: your_username
+    facebook: RedeyedAU
     github: labhackers
     # hackerrank: your_username
     # instagram: your_username
@@ -63,7 +94,7 @@ social_media:                                               # Social media accou
     # mastodon: your_username
     # medium: your_username
     reddit: r/RedeyedSoftware                               # can be either "r/subreddit_name" or "user/username"
-    # stackoverflow: your_user_id
+    stackoverflow: 3488262
     substack: redeyedau
     # telegram: your_username
     # threads: your_username
@@ -112,7 +143,9 @@ plugins:
     - jekyll-github-metadata
     - jekyll-relative-links
     - jekyll-paginate
-    - jekyll-tagging
+    - jekyll-avatar
+    - jekyll-sitemap
+#    - jekyll-tagging
 
 ####################################################################
 # JEKYLL-PAGINATE SETTINGS
@@ -123,9 +156,15 @@ paginate_path: "/blog/page:num"
 ####################################################################
 # JEKYLL-TAGGING SETTINGS
 ####################################################################
-tag_page_layout: tags
-tag_page_dir: tags
-related_by: "tags or categories"
+# tag_page_layout: tags
+# tag_page_dir: tags
+# tag_feed_layout: feed
+# tag_feed_dir: tags
+# tag_permalink_style: pretty
+# related_by: "tags or categories"
+# tag_page_data:
+#     sitemap: false
+# ignored_tags: []
 
 ####################################################################
 # JEKYLL-CATEGORY-PAGES SETTINGS
