@@ -1,0 +1,19 @@
+---
+title: Atom (RSS) Feeds
+layout: page
+---
+
+{% assign sorted = site.feeds | sort:  %}
+{% assign max_posts = page.max_posts | default: 10 %}
+{% assign tag_posts = 0 %}
+
+<h1 class="h3-mktg mt-4 mb-6 mb-md-8">{{ page.title }}</h1>
+
+<ul>
+	<li><a href="{{ site.url }}{{ site.baseurl }}feeds/latest.xml">Latest Articles</a></li>
+	{% for feed in site.feeds %}
+		{% unless feed.title == "latest" %}
+			<li><a href="{{ feed.url }}">{{ feed.title | capitalize }}</a></li>
+		{% endunless %}
+	{% endfor %}
+</ul>

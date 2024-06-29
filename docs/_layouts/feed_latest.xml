@@ -20,6 +20,14 @@ layout: nil
 	</author>
 	<rights>{{ site.feed_rights }}</rights>
 
+	{% assign sorted = site.posts | sort: 'date' | reverse %}
+	{% assign max_items = page.max_items | default: 10 %}
+
+	{% for item in sorted limit:  %}
+
+	{%%}
+
+	{% comment %}
 	{% for post in site.posts limit: 10 %}
 		{% if post.tags contains page.tag-name %}
 		<entry>
@@ -31,5 +39,6 @@ layout: nil
 		</entry>
 		{% endif %}
 	{% endfor %}
+	{% endcomment %}
 
 </feed>
