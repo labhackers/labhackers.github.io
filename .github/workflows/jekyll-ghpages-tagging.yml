@@ -16,6 +16,7 @@ jobs:
             id-token: write
         uses: ragdata/reusable-workflows/.github/workflows/jekyll-ghpages-tagging.yml@master
         with:
+            debug: true
             posts_dir: "docs/_posts"
             tags_dir: "docs/_tags"
             tags_layout: "tags"
