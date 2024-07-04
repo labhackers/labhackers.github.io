@@ -21,4 +21,4 @@ jobs:
             feeds_dir: "docs/_feeds"
             feeds_layout: "feed"
         secrets:
-            github_token: ${{ secrets.github_token }}
+            token: ${{ secrets.github_token }}
