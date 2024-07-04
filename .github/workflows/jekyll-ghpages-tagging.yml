@@ -25,3 +25,5 @@ jobs:
                 tags_layout: "tags"
                 feeds_dir: "docs/_feeds"
                 feeds_layout: "feed"
+              env:
+                GITHUB_TOKEN: ${{ github.token }}
