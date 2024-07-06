@@ -10,7 +10,7 @@
 # License:      MIT License
 # Copyright:    Copyright © 2024 Darren (Ragdata) Poulton
 ####################################################################
-name: Jekyll GitHub-Pages Tagging Workflow
+name: Jekyll GitHub-Pages Tagging Reusable Workflow
 
 on:
     # Allows for manual triggering via Actions tab
